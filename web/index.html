@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="img/logo-provisional.png">
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/mapa.css">-->
+	<link rel="stylesheet" href="css/responsive.css">
+	<link type="text/css" rel="stylesheet" href="css/mapa.css" />
+	<script src="js/mapa.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--<script src="js/mapa.js"></script>-->
+				
+	<title>Parkup</title>
+
+	<meta name="description" content="Proyecto de aparcamiento">		
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+	<!--MOBILE-->
+	<header class="col-1 mobile">
+		<div class="col-1-3 mobile-bell"><i class="fas fa-bell fa-2x"></i></div>
+		<a href="index.html"><div class="col-1-3"><img src="img/logo-provisional.png"></div></a>
+		<div class="col-1-3 mobile-menu" id="desplegable"><i class="fas fa-bars fa-2x"></i></div>
+	</header>
+	<nav class="col-1 mobile-nav mobile desplegable">
+		<ul>
+			<li><i class="fas fa-user fa-1x"></i><span>&nbsp;&nbsp; Nombre usuario</span></li>
+			<li><a href="#">Mi cuenta</a></li>
+			<li><a href="#">Promociones</a></li>
+			<li><a href="#">Alertas</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="informacion.html">Información</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<br>
+		</ul>
+	</nav>
+
+	<!--DESKTOP-->
+	<header>
+		<nav class="col-1 desktop">
+			<div class="col-1-5"><a href="index.html"><img src="img/logo-provisional.png"></a></div>
+			<div class="col-1-5 menu"><a href="promociones.html">Promociones</a></div>
+			<div class="col-1-5 menu"><a href="informacion.html">Información</a></div>
+			<div class="col-1-5 menu"><a href="contacto.html">Contacto</a></div>
+			<div class="col-1-5"><i class="fas fa-user fa-1x mobile-desktop"></i></div>
+		</nav>	
+    <div class="col-1">
+		<div class="col-1 desplegable-desktop">
+            <div class="col-1-2">&nbsp;</div>
+            <div class="col-1-2"  id="fondomenu">
+                <ul>
+                    <li> Nombre usuario</li>
+                    <li><a href="vehiculo_nuevo.jsp">Mi cuenta</a></li>
+                    <li><a href="#">Alertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <br>
+                </ul>
+        </div>
+        </div>
+    </div>
+	</header>
+	
+	<body>
+<div class="col-1">
+    <!--<div class="wrapper">-->
+        <div id="content">
+            <br><br>
+            <div id="isla" class="zona_naranja">
+
+                <image id="1" src="images/coche.png" alt="Icono de un coche" class='coche' onmouseover="MouseOver(1)" onmouseout="MouseOut1(this)" onclick="click1(this)">
+                <image id="2" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(2)" onmouseout="MouseOut2(this)" onclick="click2(this)">
+                <image id="3" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(3)" onmouseout="MouseOut3(this)" onclick="click3(this)">
+                <image id="4" src="images/cocheElectrico.png" alt="Icono de coche eléctrico"class="coche" onmouseover="MouseOver(4)" onmouseout="MouseOut4(this)" onclick="click4(this)">
+                <br>
+                <image id="5" src="images/cocheElectrico.png" alt="Icono de coche eléctrico" class="coche" onmouseover="MouseOver(5)" onmouseout="MouseOut5(this)" onclick="click5(this)">
+                <image id="6" src="images/furgoneta.png" alt="Icono de furgoneta" class="furgoneta" onmouseover="MouseOver(6)" onmouseout="MouseOut6(this)" onclick="click6(this)">
+                <image id="7" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(7)" onmouseout="MouseOut7(this)" onclick="click7(this)">
+                <image id="8" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(8)" onmouseout="MouseOut8(this)" onclick="click8(this)">
+            </div>
+
+            <div id="carretera_vertical_acceso">
+                <image src="images/carretera_vertical_acceso.png" alt="Imagen de una carretera" class="carretera">
+            </div>
+
+            <div id="isla" class="zona_rosa">
+
+                <image id="9" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(9)" onmouseout="MouseOut9(this)" onclick="click9(this)">
+                <image id="10" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(10)" onmouseout="MouseOut10(this)" onclick="click10(this)">
+                <image id="11" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(11)" onmouseout="MouseOut11(this)" onclick="click11(this)">
+                <image id="12" src="images/cocheElectrico.png" alt="Icono de coche eléctrico"class="coche" onmouseover="MouseOver(12)" onmouseout="MouseOut12(this)" onclick="click12(this)">
+                <br>
+                <image id="13" src="images/cocheElectrico.png" alt="Icono de coche eléctrico" class="coche" onmouseover="MouseOver(13)" onmouseout="MouseOut13(this)" onclick="click13(this)">
+                <image id="14" src="images/furgoneta.png" alt="Icono de furgoneta" class="furgoneta" onmouseover="MouseOver(14)" onmouseout="MouseOut14(this)" onclick="click14(this)">
+                <image id="15" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(15)" onmouseout="MouseOut15(this)" onclick="click15(this)">
+                <image id="16" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(16)" onmouseout="MouseOut16(this)" onclick="click16(this)">
+            </div>
+
+            <div id="carretera_horizontal">
+                <image src="images/carretera_horizontal.png" alt="Imagen de una carretera" class="carretera">
+            </div>
+
+            <div id="isla" class="zona_amarilla">
+
+                <image id="17" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(17)" onmouseout="MouseOut17(this)" onclick="click17(this)">
+                <image id="18" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(18)" onmouseout="MouseOut18(this)" onclick="click18(this)">
+                <image id="19" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(19)" onmouseout="MouseOut19(this)" onclick="click19(this)">
+                <image id="20" src="images/cocheElectrico.png" alt="Icono de coche eléctrico"class="coche" onmouseover="MouseOver(20)" onmouseout="MouseOut20(this)" onclick="click20(this)">
+                <br>
+                <image id="21" src="images/cocheElectrico.png" alt="Icono de coche eléctrico" class="coche" onmouseover="MouseOver(21)" onmouseout="MouseOut21(this)" onclick="click21(this)">
+                <image id="22" src="images/furgoneta.png" alt="Icono de furgoneta" class="furgoneta" onmouseover="MouseOver(22)" onmouseout="MouseOut22(this)" onclick="click22(this)">
+                <image id="23" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(23)" onmouseout="MouseOut23(this)" onclick="click23(this)">
+                <image id="24" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(24)" onmouseout="MouseOut24(this)" onclick="click24(this)">
+            </div>
+
+            <div id="carretera_vertical_1">
+                <image src="images/carretera_vertical.png" alt="Imagen de una carretera" class="carretera">
+            </div>
+
+            <div id="isla" class="zona_marron">
+
+                <image id="25" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(25)" onmouseout="MouseOut25(this)" onclick="click25(this)">
+                <image id="26" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(26)" onmouseout="MouseOut26(this)" onclick="click26(this)">
+                <image id="27" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(27)" onmouseout="MouseOut27(this)" onclick="click27(this)">
+                <image id="28" src="images/cocheElectrico.png" alt="Icono de coche eléctrico"class="coche" onmouseover="MouseOver(28)" onmouseout="MouseOut28(this)" onclick="click28(this)">
+                <br>
+                <image id="29" src="images/cocheElectrico.png" alt="Icono de coche eléctrico" class="coche" onmouseover="MouseOver(29)" onmouseout="MouseOut29(this)" onclick="click29(this)">
+                <image id="30" src="images/furgoneta.png" alt="Icono de furgoneta" class="furgoneta" onmouseover="MouseOver(30)" onmouseout="MouseOut30(this)" onclick="click30(this)">
+                <image id="31" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(31)" onmouseout="MouseOut31(this)" onclick="click31(this)">
+                <image id="32" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(32)" onmouseout="MouseOut32(this)" onclick="click32(this)">
+            </div>
+
+            <div id="carretera_horizontal">
+                <image src="images/carretera_horizontal.png" alt="Imagen de una carretera" class="carretera">
+            </div>
+
+            <div id="isla" class="zona_morada">
+
+                <image id="33" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(33)" onmouseout="MouseOut33(this)" onclick="click33(this)">
+                <image id="34" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(34)" onmouseout="MouseOut34(this)" onclick="click34(this)">
+                <image id="35" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(35)" onmouseout="MouseOut35(this)" onclick="click35(this)">
+                <image id="36" src="images/cocheElectrico.png" alt="Icono de coche eléctrico" class="coche" onmouseover="MouseOver(36)" onmouseout="MouseOut36(this)" onclick="click36(this)">
+                <br>
+                <image id="37" src="images/cocheElectrico.png" alt="Icono de coche eléctrico" class="coche" onmouseover="MouseOver(37)" onmouseout="MouseOut37(this)" onclick="click37(this)">
+                <image id="38" src="images/furgoneta.png" alt="Icono de furgoneta" class="furgoneta" onmouseover="MouseOver(38)" onmouseout="MouseOut38(this)" onclick="click38(this)">
+                <image id="39" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(39)" onmouseout="MouseOut39(this)" onclick="click39(this)">
+                <image id="40" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(40)" onmouseout="MouseOut40(this)" onclick="click40(this)">
+            </div>
+
+            <div id="carretera_vertical_2">
+                <image src="images/carretera_vertical.png" alt="Imagen de una carretera" class="carretera">
+            </div>
+
+            <div id="isla" class="zona_gris">
+
+                <image id="41" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(41)" onmouseout="MouseOut41(this)" onclick="click41(this)">
+                <image id="42" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(42)" onmouseout="MouseOut42(this)" onclick="click42(this)">
+                <image id="43" src="images/coche.png" alt="Icono de un coche" class="coche" onmouseover="MouseOver(43)" onmouseout="MouseOut43(this)" onclick="click43(this)">
+                <image id="44" src="images/cocheElectrico.png" alt="Icono de coche eléctrico"class="coche" onmouseover="MouseOver(44)" onmouseout="MouseOut44(this)"onclick="click44(this)">
+                <br>
+                <image id="45" src="images/cocheElectrico.png" alt="Icono de coche eléctrico" class="coche" onmouseover="MouseOver(45)" onmouseout="MouseOut45(this)" onclick="click45(this)">
+                <image id="46" src="images/furgoneta.png" alt="Icono de furgoneta" class="furgoneta" onmouseover="MouseOver(46)" onmouseout="MouseOut46(this)" onclick="click46(this)">
+                <image id="47" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(47)" onmouseout="MouseOut47(this)" onclick="click47(this)">
+                <image id="48" src="images/moto.png" alt="Icono de moto" class="moto"  onmouseover="MouseOver(48)" onmouseout="MouseOut48(this)" onclick="click48(this)">
+
+            </div>
+            <br><br>
+        </div>
+    <!--</div>-->
+	</div>
+    </body>
+	
+	
+	
+	<!--FOOTER-->
+	<footer class="col-1 footer">
+		<div class="col-1-2 footer-left">
+			<p><i class="fas fa-phone"></i>&nbsp; 912345678</p>
+			<br>
+			<p><i class="fas fa-mobile-alt"></i>&nbsp; 612345789</p>
+			<br>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; C/ Pepita Pérez, 58.</p>
+			<br><br>
+		</div>
+		<div class="col-1-2 footer-right">
+			<p><i class="fab fa-instagram"></i>&nbsp; @Parkup</p>
+			<br>
+			<p><i class="fab fa-facebook-square"></i>&nbsp; Parkup</p>
+			<br>
+			<p><i class="fab fa-twitter-square"></i>&nbsp; @Parkup</p>
+			<br><br>
+		</div>
+		<div class="col-1">
+			&copy; Todos los derechos reservados 2019.
+		</div>
+	</footer>
+</body>
+
+</html>
