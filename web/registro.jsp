@@ -4,16 +4,15 @@
 verifica la existencia de dicho request, genera un bean con los datos y lo envía 
 a la página especificada en el atributo "page" de jsp:forward-->
 
-<% if(request.getParameter("matricula")!=null){%>
-    <jsp:useBean id="vehiculo" class="beans.Vehiculo" scope="request">
-        <jsp:setProperty name="vehiculo" property="*"/>
+<% if(request.getParameter("DNI")!=null){%>
+    <jsp:useBean id="usuario" class="beans.Usuario" scope="request">
+        <jsp:setProperty name="usuario" property="*"/>
     </jsp:useBean>
-    <%request.setAttribute("vehiculo", vehiculo);%>
+    <%request.setAttribute("usuario", usuario);%>
     
-    <jsp:forward page="prueba_vehiculo.jsp"/> <!--Sustituir por nombre del controlador de destino-->
+    <jsp:forward page="prueba_usuario.jsp"/> <!--Sustituir por nombre del controlador de destino-->
 
 <%}%>
-
 
 <!DOCTYPE html>
 <html lang="es">
@@ -86,22 +85,17 @@ a la página especificada en el atributo "page" de jsp:forward-->
 
 <!--CONTENIDO-->
 <div class="col-1 box">
-    <h1>Registre su vehículo</h1><br>
+    <h1>Registrar nuevo usuario</h1><br>
     <form>
-        <select name="tipovehiculo" required>
-            <option value="" selected disabled hidden>Tipo de vehículo</option>
-            <option value="coche">Coche</option>
-            <option value="moto">Motocicleta</option>
-            <option value="furgoneta">Furgoneta</option>
-          </select><br><br>
-        <input type="text" name="matricula" placeholder="Matrícula" required><br><br>
-        <select name="electrico">
-            <option value="" selected disabled>¿Vehículo eléctrico?</option>
-            <option value="True">Si</option>
-            <option value="False">No</option>
-        </select><br><br>
-        <input type="submit">
-    </form><br><br>
+        <input type="email" name="email" placeholder="Email"><br><br>
+        <input type="password" name="pass" placeholder="Contraseña"><br><br>
+        <input type="password" name="pass2" placeholder="Confirmar contraseña"><br><br>
+        <input type="text" name="nombre" placeholder="Nombre"><br><br>
+        <input type="text" name="apellido" placeholder="Apellido"><br><br>
+        <input type="text" name="DNI" placeholder="NIF/NIE"><br><br>
+        <input type="tel" name="telefono" placeholder="Teléfono"><br><br>
+        <input type="submit"><br><br>
+    </form>
 </div>
 
 <!--FOOTER-->
