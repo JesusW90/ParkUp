@@ -95,4 +95,10 @@ public class Usuario {
         this.vehiculos = vehiculos;
     }
 
+    @Override
+    public String toString(){
+        return("nombre: "+nombre+"\napellido: "+apellido+"\nDNI: "+DNI
+                +"\ntelefono: "+ telefono+"\nemail: "+email
+                +"\ncontrasenia: "+pass);
+    }
 }
