@@ -10,7 +10,7 @@ a la página especificada en el atributo "page" de jsp:forward-->
     </jsp:useBean>
     <%request.setAttribute("usuario", usuario);%>
     
-    <jsp:forward page="prueba_usuario.jsp"/> <!--Sustituir por nombre del controlador de destino-->
+    <jsp:forward page="RegistroUsuario"/>
 
 <%}%>
 
