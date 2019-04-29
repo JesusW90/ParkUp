@@ -59,4 +59,9 @@ public class Vehiculo {
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+    
+    @Override
+    public String toString(){
+        return("tipo: "+tipovehiculo+"\nelectico? : "+electrico+"\nmatricula: "+matricula);
+    }
 }
